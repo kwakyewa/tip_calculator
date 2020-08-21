@@ -1,0 +1,87 @@
+.container{
+height: 525px;
+width: 360px;
+margin: 200px auto;
+background: #f7f7f7;
+box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+border-radius: 20px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+align-items: center;
+}
+
+.input-group-addon {
+    cursor: pointer;
+}
+
+
+.input-group .form-group{
+margin-bottom: 10px;
+font-size: 11pt;
+padding-bottom: 15px;
+color: #787575;
+border-radius: 5px;
+width: 70%;
+outline: none;
+}
+
+
+#calculate {
+  background-color: #98FB98;
+}
+
+#calculate:hover{
+  background-color: green;
+}
+
+#reset{
+  margin-left:25px;
+  background-color:#AF7AC5;
+}
+
+#reset:hover{
+  background-color:#9B59B6  ;
+}
+
+#calculate, #reset{
+  margin-top :20px;
+  padding: 12px 45px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  display:inline-block;
+}
+
+.action_buttons{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#toolTip{
+  text-align:center;
+  font-size: 30px;
+  /*margin-top: 10px;*/
+}
+
+#toolTip h4{
+  font-weight: bold;
+}
+
+
+#totalTip sup {
+  font-size: 20px;
+  top: -18px;
+}
+
+
+#totalTip small {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+}
+
+#toolTip #each{
+  display:block;
+  font-size:18px;
+}

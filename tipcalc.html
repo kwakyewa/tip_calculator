@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tip Calculator</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+
+  <body>
+    <div id= "container">
+      <div class ="row">
+        <div class="col-sm-12">
+            <header id="header">
+              <img src ="images\sam-truong-dan-627874-unsplash-1600x655.jpg"  class="img-responsive" alt="tip_image" >
+            </header>
+        </div>
+      </div>
+          <div class="col-sm-12">
+            <form>
+                <h4>How much was your bill?</h4>
+                <div class="input-group">
+                  <span class="input-group-addon">
+                 <i class="fa fa-dollar" aria-hidden="true"></i>
+                </span>
+                  <input type ="text" id="billamount" name="billamount" class="form-control" placeholder="Bill Amount"/>
+                </div>
+
+                <h4>How was your service?</h4>
+                <div class="form-group">
+                <select class="serviceQuality form-control"  name="serviceQuality">
+                  <option selected disabled value="0">Choose an option</option>
+                  <option value="0.3"> 30&#37; &#45; Outstanding</option>
+                  <option value ="0.2">20&#37; &#45; Good</option>
+                  <option value="0.15">15&#37; &#45; It was OK</option>
+                  <option value="0.10">10&#37; &#45; Bad</option>
+                  <option value="0.05">5&#37; &#45; Terrible</option>
+                </select>
+              </div>
+
+
+              <h4>How many people are sharing the bill?</h4>
+              <div class="form-group">
+                <input type="text" name="peopleamount" id="peopleamount"  class="form-control" placeholder="Number of people"/>
+              </div>
+
+                <div class="action_buttons">
+                  <button type="button" id="calculate" name="calculate" class="btn">Calculate</button>
+                  <button type="button" id="reset" name="Reset" class="btn">Reset</button>
+                </div>
+
+            </form>
+      </div>
+
+        <div id="toolTip">
+          <h4>TIP AMOUNT</h4>
+          <sup>$</sup><span id="tip">0.00</span>
+          <small id="each">each</small>
+        </div>
+    </div>
+
+      <script src="/script/script.js" ></script>
+  </body>
+</html>
